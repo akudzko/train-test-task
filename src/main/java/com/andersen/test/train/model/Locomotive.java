@@ -1,5 +1,6 @@
 package com.andersen.test.train.model;
 
+import java.math.BigDecimal;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.SuperBuilder;
@@ -10,6 +11,6 @@ import lombok.experimental.SuperBuilder;
 public class Locomotive extends TrainUnit {
 
   private LocomotiveType type;
-  private Double pullingForce;
+  private BigDecimal pullingForce;
 
 }

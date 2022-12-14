@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.andersen.test</groupId>
-    <artifactId>TrainTestTask</artifactId>
+    <artifactId>train-test-task</artifactId>
 
     <version>1.0-SNAPSHOT</version>
 
@@ -15,24 +15,26 @@
         <maven.compiler.version>3.10.1</maven.compiler.version>
         <junit.version>5.9.1</junit.version>
     </properties>
+
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
-
-
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -47,8 +49,5 @@
             </plugin>
         </plugins>
     </build>
-
-
-
 
 </project>

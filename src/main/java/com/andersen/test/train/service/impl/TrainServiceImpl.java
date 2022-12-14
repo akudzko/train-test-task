@@ -7,7 +7,8 @@ public class TrainServiceImpl implements TrainService {
 
   @Override
   public boolean isTrainMovable(Train train) {
-    return train.getPullingForce() > train.getMaxValuableWeight();
+    int comparingResult = train.getPullingForce().compareTo(train.getMaxValuableWeight());
+    return comparingResult > 0;
   }
 
 }

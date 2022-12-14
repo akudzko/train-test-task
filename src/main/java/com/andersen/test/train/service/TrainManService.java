@@ -1,10 +1,10 @@
 package com.andersen.test.train.service;
 
-import com.andersen.test.train.model.TrainAble;
+import com.andersen.test.train.model.TrainQuality;
 
 public interface TrainManService {
 
-  boolean isTrainManNeeded(TrainAble train);
+  boolean isTrainManNeeded(TrainQuality train);
 
-  Integer getNeededTrainManAmount(TrainAble train);
+  Integer getNeededTrainManAmount(TrainQuality train);
 }

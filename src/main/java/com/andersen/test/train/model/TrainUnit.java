@@ -1,5 +1,6 @@
 package com.andersen.test.train.model;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import lombok.Data;
 import lombok.experimental.SuperBuilder;
@@ -10,13 +11,13 @@ public abstract class TrainUnit {
 
   private String uid;
   private String producer;
-  private Double emptyWeight;
+  private BigDecimal emptyWeight;
   private Integer length;
   private Integer passengerAmount;
   private Integer maxPassengerAmount;
-  private Double maxValuableWeight;
+  private BigDecimal maxValuableWeight;
   private LocalDate productionDate;
-  private Double valuableWeight;
+  private BigDecimal valuableWeight;
   private Train train;
 
 }
